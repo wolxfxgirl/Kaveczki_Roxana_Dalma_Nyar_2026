@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Nyári terveim 2026</h1>
+<!DOCTYPE html>
 
-    <h2>A főbb terveim</h2>
+    <body>
 
-    <div class="notes">
-        <div class="sticky">Legyen ország</div>
-        <div class="sticky">Budapest</div>
-        <div class="sticky">Könyvek</div>
-    </div>
+        <h1>Nyári terveim 2026</h1>
+        <h2>A főbb terveim</h2>
+        <div class="notes">
+            <div class="sticky" onclick="showInfo('country')">Lengyel ország</div>
+            <div class="sticky" onclick="showInfo('budapest')">Budapest</div>
+            <div class="sticky" onclick="showInfo('books')">Könyvek</div>
+        </div>
 
-    <h2>Egyéb terveim</h2>
+        <h2>Egyéb terveim</h2>
+        <div class="notes">
+            <div class="sticky" onclick="showInfo('minecraft')">Minecraft</div>
+            <div class="sticky" onclick="showInfo('friends')">Barátok</div>
+            <div class="sticky" onclick="showInfo('youtube')">YouTube</div>
+        </div>
 
-    <div class="notes">
-        <div class="sticky">Legyen ország</div>
-        <div class="sticky">Budapest</div>
-        <div class="sticky">Könyvek</div>
-    </div>
-</body>
+        <div id="info-panel">
+            <h2>Válassz egy cetlit!</h2>
+            <p>Kattints egy sticky note-ra a részletekért.</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
