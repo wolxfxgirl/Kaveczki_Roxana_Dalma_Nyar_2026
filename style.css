@@ -79,3 +79,42 @@ h2 {
 
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .notes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sticky {
+        width: 80%;
+        max-width: 300px;
+        min-height: 100px;
+        transform: rotate(0deg);
+    }
+
+    .sticky:nth-child(2),
+    .sticky:nth-child(3) {
+        transform: rotate(0deg);
+    }
+
+    #info-panel {
+        position: static;
+        width: auto;
+        margin: 30px auto;
+        max-width: 90%;
+    }
+}
